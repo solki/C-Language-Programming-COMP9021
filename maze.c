@@ -1184,7 +1184,7 @@ bool is_gate(int i, int j, int dir) {
         else
             return 0;
     }
-    if (dir == 2) {
+    else {
         if (i == 0 && (grid[i][j] == 0 || grid[i][j] == 2) && grid_transformed[i][j] == 2)
             return 1;
         if (i == size_of_column - 2 && grid[i+1][j] == 0 && grid_transformed[i][j] == 2)
@@ -1192,6 +1192,7 @@ bool is_gate(int i, int j, int dir) {
         else
             return 0;
     }
+
 }
 
 void adjust_grid(void) {
